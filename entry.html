@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+ <body>
+  <script type="text/javascript">
+   var my_info = [];
+
+   function myFunction()
+   {
+     var x = document.getElementById("box");
+     my_info.push(document.getElementById("input").value);
+     x.innerHTML = my_info.join('<br/>'); 
+   }
+  </script>
+ <form>
+  <input id="input" type=text>
+   <input type=button onclick="myFunction()" value="Add Info"/>
+  </form>
+
+ <div id="box" style="border:1px solid black;width:150px;height:150px;overflow:auto"> 
+  </div>
+</body>
+</html>​
